@@ -1,0 +1,718 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Indonesian Standard Time</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="Style.css" />
+
+    </head>
+
+    <body class="bg-gray-100">
+        <header class="sticky-header">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-6">
+                    <div class="flex items-center space-x-3">
+                        <img src="images\bsn_logo_master_res.png" alt="Indonesian Standard Time" class="h-10">
+                    </div>
+                    <nav>
+                        <ul class="flex space-x-8">
+                            <li><a href="#" class="nav-item text-gray-700 font-semibold"
+                                    onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">HOME</a></li>
+                            <li><a href="#about" class="nav-item text-gray-700 font-semibold"
+                                    onclick="document.querySelector('.container.mx-auto.px-4.py-16').scrollIntoView({behavior: 'smooth'}); return false;">ABOUT
+                                    US</a></li>
+                            <li><a href="#how-it-works" class="nav-item text-gray-700 font-semibold"
+                                    onclick="document.querySelector('.how-it-works-container').scrollIntoView({behavior: 'smooth'}); return false;">HOW
+                                    IT WORKS</a></li>
+                            <li><a href="#terms" class="nav-item text-gray-700 font-semibold"
+                                    onclick="document.querySelector('.terms-section').scrollIntoView({behavior: 'smooth'}); return false;">TERMS
+                                    OF USE</a></li>
+                            <li><a href="#contact" class="nav-item text-gray-700 font-semibold"
+                                    onclick="document.querySelector('.contact-header').scrollIntoView({behavior: 'smooth'}); return false;">CONTACT
+                                    US</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex items-center justify-between mt-10">
+            <div class="circular-image-container">
+                <div class="carousel-slide active">
+                    <img src="images\background1.jpeg" alt="Image 1" class="circular-image">
+                </div>
+                <div class="carousel-slide active">
+                    <img src="images\background4.jpeg" alt="Image 1" class="circular-image">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images\background-2.jpeg" alt="Image 2" class="circular-image">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images\background-3.jpeg" alt="Image 3" class="circular-image">
+                </div>
+
+                <!-- Panah Background -->
+                <div class="carousel-button prev">
+                    &lt;
+                </div>
+                <div class="carousel-button next">
+                    &gt;
+                </div>
+
+                <!-- Dots -->
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="text-center w-1/2">
+                <div class="text-8xl font-bold text-blue-900 mb-4" id="wib-time">--:--:--</div>
+                <div class="flex justify-center space-x-8 mb-6">
+                    <div class="text-4xl text-gray-600" id="wita-time">--:--:--</div>
+                    <div class="text-4xl text-gray-600" id="wit-time">--:--:--</div>
+                </div>
+                <div class="text-gray-500 mb-6" id="current-date">
+                    UTC +7/+8/+9 | Longitude 120° East
+                    <br>
+                    Loading date...
+                </div>
+                <div class="time-zone-text">
+                    Waktu Standar Indonesia ditetapkan, dipelihara, dan disebarluaskan oleh Laboratorium Standar
+                    Nasional Satuan Ukur
+                </div>
+                <div class="flex justify-center space-x-8 mt-6">
+                    <img src="images\bsn_logo_master_res.png" alt="Organization 3" class="h-9">
+                </div>
+            </div>
+        </main>
+        </div>
+
+        <!-- About Section -->
+        <div class="container mx-auto px-4 py-16">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-800">ABOUT US</h1>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Left Column -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="images\bsn_logo_master_res.png" alt="Indonesian Standard Time" class="h-12 mr-4">
+                        <h2 class="text-2xl font-bold text-blue-900">Standar Waktu Indonesia</h2>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Waktu Standar Indonesia adalah waktu resmi untuk Indonesia yang diberikan oleh Coordinated
+                        Universal
+                        Time (UTC). Ditambah tujuh/delapan/sembilan jam berdasarkan zona waktu Indonesia.
+                    </p>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <p class="text-gray-500 text-center">
+                            UTC +7/+8/+9 | Longitude 120° East
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="images\bsn_logo_master_res.png" alt="National Metrology Institute" class="h-12 mr-4">
+                        <h2 class="text-2xl font-bold text-blue-900">Standar Nasional Satuan Ukur Waktu dan Frekuensi
+                        </h2>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Standar Nasional Satuan Ukur Waktu dan Frekuensi telah ditunjuk sebagai pencatat waktu nasional
+                        oleh
+                        Kabinet Indonesia dan sebagai Laboratorium Standar Pengukuran Nasional dalam Sistem Pengukuran
+                        Nasional.
+                    </p>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <div class="flex items-center justify-center space-x-4">
+                            <!-- <img src="images\bsn_logo_master_res.png" alt="Organization 1" class="h-8">
+                            <img src="images\bsn_logo_master_res.png" alt="Organization 2" class="h-8">
+                            <img src="images\bsn_logo_master_res.png" alt="Organization 3" class="h-8"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Information Zone Time -->
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- WIB -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-blue-900 text-xl font-bold">WIB</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Waktu Indonesia Barat</h3>
+                        <p class="text-gray-600">UTC +7</p>
+                    </div>
+                </div>
+
+                <!-- WITA -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-green-900 text-xl font-bold">WITA</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Waktu Indonesia Tengah</h3>
+                        <p class="text-gray-600">UTC +8</p>
+                    </div>
+                </div>
+
+                <!-- WIT  -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-yellow-900 text-xl font-bold">WIT</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Waktu Indonesia Timur</h3>
+                        <p class="text-gray-600">UTC +9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="how-it-works-container">
+            <div class="how-it-works-header">
+                <h1>HOW IT WORKS</h1>
+                <div class="yellow-underline"></div>
+            </div>
+
+            <div class="digital-clock">
+                <div class="clock-display" id="how-it-works-clock">--:--:--</div>
+                <p class="clock-info">Jam web ini disinkronisasikan dengan server NTP resmi BSN (ntp.bsn.go.id)
+                </p>
+            </div>
+
+            <div class="arrow-container">
+                <div class="arrow down"></div>
+                <div class="arrow up"></div>
+            </div>
+
+            <div class="sync-flow">
+                <div class="sync-item top-item">
+                    <div class="icon-wrapper">
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24" width="40" height="40">
+                                <rect x="4" y="4" width="16" height="16" rx="2" fill="#4A5568" />
+                                <rect x="7" y="8" width="10" height="2" fill="#A0AEC0" />
+                                <rect x="7" y="12" width="10" height="2" fill="#A0AEC0" />
+                            </svg>
+                        </div>
+                        <div class="pulse-ring"></div>
+                    </div>
+                    <p>Server UTC(IDN) melakukan sinkronisasi dengan Jam Atom Cesium SNSU hingga akurasi milidetik</p>
+                </div>
+
+                <div class="arrow-container">
+                    <div class="arrow down"></div>
+                    <div class="arrow up"></div>
+                </div>
+
+                <div class="bottom-items">
+                    <div class="sync-item">
+                        <div class="icon-wrapper">
+                            <div class="icon-circle">
+                                <svg viewBox="0 0 24 24" width="40" height="40">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#4A5568"
+                                        fill="none" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <p>Jam Atom Cesium SNSU secara terus-menerus dibandingkan dengan UTC melalui metode tampilan
+                            umum
+                            GPS untuk penelusuran skala waktu internasional
+                        </p>
+                    </div>
+
+                    <div class="sync-item">
+                        <div class="icon-wrapper">
+                            <div class="icon-circle">
+                                <svg viewBox="0 0 24 24" width="40" height="40">
+                                    <circle cx="12" cy="12" r="5" fill="none" stroke="#4A5568" stroke-width="2" />
+                                    <circle cx="12" cy="12" r="10" fill="none" stroke="#4A5568" stroke-width="2"
+                                        stroke-dasharray="3 3" />
+                                </svg>
+                            </div>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <p>Jam Atom Cesium yang berada di Laboratorium SNSU sangat menjaga tingkat akurasi waktu hingga
+                            ketepatan waktu
+                            satu detik dalam 60.000 tahun</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terms of Use Section -->
+        <section class="terms-section">
+            <div class="terms-container">
+                <div class="terms-header">
+                    <h1>Terms of Use</h1>
+                    <div class="yellow-underline"></div>
+                </div>
+
+                <div class="terms-grid">
+                    <div class="terms-item">
+                        <div class="icon-wrapper">
+                            <div class="pulse-ring"></div>
+                            <div class="icon-circle">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a365d"
+                                    stroke-width="2">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="terms-text">
+                            Akurasi waktu dari jam web ini bervariasi, tergantung pada penundaan dan lalu lintas
+                            jaringan dari pengguna
+                        </p>
+                    </div>
+
+                    <div class="terms-item">
+                        <div class="icon-wrapper">
+                            <div class="pulse-ring"></div>
+                            <div class="icon-circle">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a365d"
+                                    stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                    <line x1="8" y1="21" x2="16" y2="21" />
+                                    <line x1="12" y1="17" x2="12" y2="21" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="terms-text">
+                            Jam pada website ini tidak menyinkronkan jam waktu komputer pengguna
+                        </p>
+                    </div>
+
+                    <div class="terms-item">
+                        <div class="icon-wrapper">
+                            <div class="pulse-ring"></div>
+                            <div class="icon-circle">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a365d"
+                                    stroke-width="2">
+                                    <path d="M2 3h20v18H2z" />
+                                    <path d="M4 7h16M4 11h16M4 15h16M4 19h16" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="terms-text">
+                            Jam web ini ideal untuk kebutuhan sehari-hari tetapi tidak dimaksudkan untuk digunakan untuk
+                            tujuan verifikasi, kalibrasi, atau audit pengukuran waktu dan frekuensi
+                        </p>
+                    </div>
+
+                    <div class="terms-item">
+                        <div class="icon-wrapper">
+                            <div class="pulse-ring"></div>
+                            <div class="icon-circle">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a365d"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="terms-text">
+                            Untuk detail tentang layanan pengukuran waktu dan frekuensi SNSU, silakan kirimkan
+                            pertanyaan Anda ke
+                            <a href="mailto:time@bsn.go.id" class="email-link">time@bsn.go.id</a>
+                        </p>
+                    </div>
+
+                    <div class="terms-item terms-sync-card">
+                        <div class="icon-wrapper">
+                            <div class="pulse-ring"></div>
+                            <div class="icon-circle">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a365d"
+                                    stroke-width="2">
+                                    <path d="M12 2v20M2 12h20" />
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="terms-text">
+                            Ingin mensinkronkan waktu komputer Anda dengan NTP BSN?
+                            <button class="sync-button" onclick="openModal()">Lihat Panduan Sinkronisasi</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="syncModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">&times;</span>
+                    <h2>Panduan Sinkronisasi NTP</h2>
+                    <div class="tabs">
+                        <button class="tab-button active" onclick="switchTab('windows')">Windows</button>
+                        <button class="tab-button" onclick="switchTab('linux')">Linux</button>
+                        <button class="tab-button" onclick="switchTab('mac')">MacOS</button>
+                    </div>
+                    <div id="windows" class="tab-content active">
+                        <h3>Sinkronisasi di Windows</h3>
+                        <ol>
+                            <li>Buka Command Prompt sebagai Administrator</li>
+                            <li>Ketik perintah berikut:
+                                <code>w32tm /config /manualpeerlist:ntp.bsn.go.id /syncfromflags:manual /reliable:yes /update</code>
+                            </li>
+                            <li>Restart layanan waktu dengan perintah:
+                                <code>net stop w32time && net start w32time</code>
+                            </li>
+                            <li>Sinkronkan waktu dengan perintah:
+                                <code>w32tm /resync /force</code>
+                            </li>
+                        </ol>
+                    </div>
+                    <div id="linux" class="tab-content">
+                        <h3>Sinkronisasi di Linux</h3>
+                        <ol>
+                            <li>Install NTP jika belum terinstall:
+                                <code>sudo apt-get install ntp</code>
+                            </li>
+                            <li>Edit file konfigurasi NTP:
+                                <code>sudo nano /etc/ntp.conf</code>
+                            </li>
+                            <li>Tambahkan server BSN:
+                                <code>server ntp.bsn.go.id prefer</code>
+                            </li>
+                            <li>Restart layanan NTP:
+                                <code>sudo service ntp restart</code>
+                            </li>
+                        </ol>
+                    </div>
+                    <div id="mac" class="tab-content">
+                        <h3>Sinkronisasi di MacOS</h3>
+                        <ol>
+                            <li>Buka Terminal</li>
+                            <li>Ketik perintah berikut:
+                                <code>sudo sntp -sS ntp.bsn.go.id</code>
+                            </li>
+                            <li>Masukkan password administrator Anda</li>
+                            <li>Tunggu hingga proses sinkronisasi selesai</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <div class="contact-section">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <div class="yellow-underline"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="info-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-block">
+                        <h3>Get in Touch</h3>
+                        <p>Ada pertanyaan tentang layanan pengukuran waktu dan frekuensi kami? Kami siap membantu!</p>
+                        <div class="contact-item">
+                            <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            <a href="mailto:time@bsn.go.id">time@bsn.go.id</a>
+                        </div>
+                    </div>
+
+                    <!-- Location Information -->
+                    <div class="contact-block">
+                        <h3>Lokasi Kami</h3>
+                        <div class="contact-item">
+                            <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            <div>
+                                <p>Gedung SNSU - BSN</p>
+                                <p>Kawasan PUSPIPTEK Gedung 420</p>
+                                <p>Kota Tangerang Selatan, Banten 15314</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="contact-block">
+                        <h3>Terhubung Dengan Kami</h3>
+                        <div class="social-grid">
+                            <a href="https://www.facebook.com/BadanStandardisasiNasional" class="social-item">
+                                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+                                </svg>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/snsubsn?igsh=MWpodWd2N3g3M3d6OA==" class="social-item">
+                                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://www.linkedin.com/company/badan-standardisasi-nasional/"
+                                class="social-item">
+                                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-section">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2963936098913!2d106.6589580741494!3d-6.355665793634301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5f20e99a799%3A0x4b190a5aa378111!2sSNSU%20BSN!5e0!3m2!1sen!2sid!4v1739515383735!5m2!1sen!2sid"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            class TimeManager {
+                constructor() {
+                    this.timeOffset = 0;
+                    this.isInitialized = false;
+                    this.updateInterval = null;
+                }
+
+                async init() {
+                    const now = new Date();
+                    this.startClock();
+                    this.isInitialized = true;
+                }
+
+                getCurrentTime() {
+                    return new Date(Date.now() + this.timeOffset);
+                }
+
+                updateClocks() {
+                    const now = this.getCurrentTime();
+
+                    // WIB milidetik
+                    const wibTime = new Date(now.getTime());
+                    wibTime.setHours(now.getHours());
+
+                    // WITA (normal)
+                    const witaTime = new Date(now.getTime());
+                    witaTime.setHours(now.getHours() + 1);
+
+                    // WIT (normal)
+                    const witTime = new Date(now.getTime());
+                    witTime.setHours(now.getHours() + 2);
+
+                    // Update displays
+                    document.getElementById('wib-time').textContent = this.formatTimeWithMilliseconds(wibTime);
+                    document.getElementById('wita-time').textContent = this.formatTime(witaTime);
+                    document.getElementById('wit-time').textContent = this.formatTime(witTime);
+                    document.getElementById('how-it-works-clock').textContent = this.formatTime(wibTime);
+
+                    document.getElementById('current-date').innerHTML = `
+            UTC +7/+8/+9 | Longitude 120° East
+            <br>
+            ${this.formatDate(now)}
+        `;
+                }
+
+                formatTime(date) {
+                    const hours = String(date.getHours()).padStart(2, '0');
+                    const minutes = String(date.getMinutes()).padStart(2, '0');
+                    const seconds = String(date.getSeconds()).padStart(2, '0');
+                    return `${hours}:${minutes}:${seconds}`;
+                }
+
+                formatTimeWithMilliseconds(date) {
+                    const hours = String(date.getHours()).padStart(2, '0');
+                    const minutes = String(date.getMinutes()).padStart(2, '0');
+                    const seconds = String(date.getSeconds()).padStart(2, '0');
+                    const milliseconds = String(date.getMilliseconds()).padStart(3, '0');
+                    return `${hours}:${minutes}:${seconds}:${milliseconds}`;
+                }
+
+                formatDate(date) {
+                    return date.toLocaleDateString('in-GB', {
+                        weekday: 'long',
+                        day: 'numeric',
+                        month: 'long',
+                        year: 'numeric'
+                    });
+                }
+
+                startClock() {
+                    if (this.updateInterval) {
+                        clearInterval(this.updateInterval);
+                    }
+                    this.updateClocks();
+                    this.updateInterval = setInterval(() => this.updateClocks(), 70);
+                }
+            }
+
+            const timeManager = new TimeManager();
+            window.addEventListener('load', () => timeManager.init());
+
+            // Carousel dan navigasi code tetap sama seperti sebelumnya
+            document.addEventListener('DOMContentLoaded', function () {
+                const slides = document.querySelectorAll('.carousel-slide');
+                const dots = document.querySelectorAll('.dot');
+                const prevButton = document.querySelector('.carousel-button.prev');
+                const nextButton = document.querySelector('.carousel-button.next');
+                let currentSlide = 0;
+                let intervalId;
+
+                function showSlide(index) {
+                    if (index >= slides.length) index = 0;
+                    if (index < 0) index = slides.length - 1;
+
+                    currentSlide = index;
+
+                    slides.forEach(slide => slide.classList.remove('active'));
+                    dots.forEach(dot => dot.classList.remove('active'));
+
+                    slides[currentSlide].classList.add('active');
+                    dots[currentSlide].classList.add('active');
+                }
+
+                function startAutoSlide() {
+                    intervalId = setInterval(() => {
+                        showSlide(currentSlide + 1);
+                    }, 5000);
+                }
+
+                function resetAutoSlide() {
+                    clearInterval(intervalId);
+                    startAutoSlide();
+                }
+
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        showSlide(index);
+                        resetAutoSlide();
+                    });
+                });
+
+                prevButton.addEventListener('click', () => {
+                    showSlide(currentSlide - 1);
+                    resetAutoSlide();
+                });
+
+                nextButton.addEventListener('click', () => {
+                    showSlide(currentSlide + 1);
+                    resetAutoSlide();
+                });
+
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') {
+                        showSlide(currentSlide - 1);
+                        resetAutoSlide();
+                    } else if (e.key === 'ArrowRight') {
+                        showSlide(currentSlide + 1);
+                        resetAutoSlide();
+                    }
+                });
+
+                startAutoSlide();
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const sections = {
+                    home: document.querySelector('main'),
+                    about: document.querySelector('.container.mx-auto.px-4.py-16'),
+                    howItWorks: document.querySelector('.how-it-works-container'),
+                    terms: document.querySelector('.terms-section'),
+                    contact: document.querySelector('.contact-header')
+                };
+
+                const navItems = document.querySelectorAll('.nav-item');
+
+                function getCurrentSection() {
+                    const scrollPosition = window.scrollY + 100;
+
+                    for (const [key, section] of Object.entries(sections)) {
+                        if (!section) continue;
+
+                        const sectionTop = section.offsetTop;
+                        const sectionBottom = sectionTop + section.offsetHeight;
+
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                            return key;
+                        }
+                    }
+                    return 'home';
+                }
+
+                function updateNavigation() {
+                    const currentSection = getCurrentSection();
+
+                    navItems.forEach(item => {
+                        item.style.color = '';
+                        item.style.transform = '';
+
+                        const href = item.getAttribute('href').replace('#', '');
+                        const sectionName = href || 'home';
+
+                        if (sectionName === currentSection) {
+                            item.style.color = '#1a3b69';
+                            item.style.transform = 'scale(1.05)';
+                            item.style.setProperty('--nav-underline-width', '100%');
+                        } else {
+                            item.style.setProperty('--nav-underline-width', '0');
+                        }
+                    });
+                }
+
+                window.addEventListener('scroll', updateNavigation);
+                updateNavigation();
+            });
+
+            //function buka modal
+            function openModal() {
+                document.getElementById('syncModal').style.display = 'block';
+            }
+
+            function closeModal() {
+                document.getElementById('syncModal').style.display = 'none';
+            }
+
+            function switchTab(tabName) {
+                const tabContents = document.getElementsByClassName('tab-content');
+                for (let content of tabContents) {
+                    content.classList.remove('active');
+                }
+
+                const tabButtons = document.getElementsByClassName('tab-button');
+                for (let button of tabButtons) {
+                    button.classList.remove('active');
+                }
+
+                document.getElementById(tabName).classList.add('active');
+                event.target.classList.add('active');
+            }
+
+            window.onclick = function (event) {
+                const modal = document.getElementById('syncModal');
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+
+    </html>
