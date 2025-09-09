@@ -24,9 +24,9 @@ Aplikasi web sederhana yang menampilkan informasi waktu real-time dengan menggun
 
 | Teknologi | Fungsi |
 |-----------|--------|
-| **HTML5** | Struktur dan markup aplikasi |
-| **CSS3** | Styling dan layout responsif |
-| **JavaScript** | Logika aplikasi dan komunikasi NTP |
+| **(https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)** | Struktur dan markup aplikasi |
+| **(https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)** | Styling dan layout responsif |
+| **(https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)** | Logika aplikasi dan komunikasi NTP |
 
 ##  Cara Menjalankan
 
