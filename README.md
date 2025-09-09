@@ -13,14 +13,14 @@
 
 Aplikasi web sederhana yang menampilkan informasi waktu real-time dengan menggunakan Network Time Protocol (NTP). Proyek ini dibuat menggunakan teknologi web fundamental (HTML, CSS, dan JavaScript) untuk memberikan informasi satuan waktu yang akurat dari server NTP tertentu.
 
-## ✨ Fitur Utama
+##  Fitur Utama
 
 - **Sinkronisasi Waktu Real-time** - Menampilkan waktu yang disinkronkan dengan server NTP
 - **Interface Responsif** - Desain yang dapat menyesuaikan berbagai ukuran layar
 - **Informasi Detail** - Menampilkan berbagai format waktu dan informasi terkait
 - **Ringan & Cepat** - Dibuat dengan teknologi web murni tanpa framework tambahan
 
-## 🛠️ Teknologi yang Digunakan
+##  Teknologi yang Digunakan
 
 | Teknologi | Fungsi |
 |-----------|--------|
@@ -28,7 +28,7 @@ Aplikasi web sederhana yang menampilkan informasi waktu real-time dengan menggun
 | **CSS3** | Styling dan layout responsif |
 | **JavaScript** | Logika aplikasi dan komunikasi NTP |
 
-## 🚀 Cara Menjalankan
+##  Cara Menjalankan
 
 ### Prasyarat
 - Web browser modern (Chrome, Firefox, Safari, Edge)
@@ -52,7 +52,7 @@ Aplikasi web sederhana yang menampilkan informasi waktu real-time dengan menggun
    ```
    *atau sesuai dengan port yang Anda gunakan*
 
-## 📁 Struktur Proyek
+## Struktur Proyek
 
 ```
 NTP/
@@ -62,7 +62,7 @@ NTP/
 └── README.md          # Dokumentasi proyek
 ```
 
-## 🔧 Konfigurasi
+## Konfigurasi
 
 Aplikasi ini menggunakan server NTP default untuk sinkronisasi waktu. Untuk mengubah server NTP:
 
@@ -76,7 +76,7 @@ const ntpServer = 'time.google.com';
 const ntpPort = 123;
 ```
 
-## 🎯 Fitur yang Ditampilkan
+## Fitur yang Ditampilkan
 
 - **Waktu Lokal** - Waktu berdasarkan timezone browser
 - **Waktu UTC** - Waktu universal terkoordinasi
@@ -84,7 +84,7 @@ const ntpPort = 123;
 - **Format Kustom** - Berbagai format tampilan waktu
 - **Status Sinkronisasi** - Indikator koneksi dengan NTP server
 
-## 🤝 Kontribusi
+## Kontribusi
 
 Kontribusi sangat diterima! Untuk berkontribusi:
 
@@ -102,15 +102,15 @@ Kontribusi sangat diterima! Untuk berkontribusi:
 - [ ] Integrasi dengan API timezone
 - [ ] Menambahkan notifikasi untuk perubahan waktu
 
-## 🐛 Laporan Bug
+## Laporan Bug
 
 Jika Anda menemukan bug atau memiliki saran, silakan buat [issue baru](https://github.com/raihanrama/NTP/issues/new).
 
-## 📄 Lisensi
+## Lisensi
 
 Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE untuk detail lebih lanjut.
 
-## 👨‍💻 Pengembang
+## Pengembang
 
 **Raihan Rama**
 - GitHub: [@raihanrama](https://github.com/raihanrama)
