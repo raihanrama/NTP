@@ -1,4 +1,4 @@
-# NTP Time Information
+# NTP Time Information Indonesia
 
 <div align="center">
 
@@ -9,7 +9,7 @@
 
 </div>
 
-## 📝 Deskripsi
+## Deskripsi
 
 Aplikasi web sederhana yang menampilkan informasi waktu real-time dengan menggunakan Network Time Protocol (NTP). Proyek ini dibuat menggunakan teknologi web fundamental (HTML, CSS, dan JavaScript) untuk memberikan informasi satuan waktu yang akurat dari server NTP tertentu.
 
